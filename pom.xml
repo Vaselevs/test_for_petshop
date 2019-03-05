@@ -7,6 +7,10 @@
   <version>1</version>
   <name>test_for_petshop</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,5 +18,11 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.0</version>
+    </dependency>
+
   </dependencies>
 </project>
