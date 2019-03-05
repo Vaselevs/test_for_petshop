@@ -7,10 +7,30 @@
   <version>1</version>
   <name>test_for_petshop</name>
   <url>http://maven.apache.org</url>
+
   <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>com.vaselevs.app.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,6 +43,8 @@
       <artifactId>mybatis</artifactId>
       <version>3.5.0</version>
     </dependency>
-
   </dependencies>
+
+
+
 </project>
